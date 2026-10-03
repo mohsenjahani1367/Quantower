@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+.local/
+artifacts/
+recordings/
+*.user
+*.suo
+config/appsettings.local.json

@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/VolumeIntelligence.Core/VolumeIntelligence.Core.csproj" />
+    <ProjectReference Include="../../src/VolumeIntelligence.Providers/VolumeIntelligence.Providers.csproj" />
+    <None Include="../fixtures/**" CopyToOutputDirectory="PreserveNewest" Link="fixtures/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

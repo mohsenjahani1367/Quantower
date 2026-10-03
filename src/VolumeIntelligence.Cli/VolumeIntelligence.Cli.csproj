@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../VolumeIntelligence.Core/VolumeIntelligence.Core.csproj" />
+    <ProjectReference Include="../VolumeIntelligence.Providers/VolumeIntelligence.Providers.csproj" />
+  </ItemGroup>
+</Project>

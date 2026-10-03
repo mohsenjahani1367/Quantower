@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup><ProjectReference Include="../VolumeIntelligence.Core/VolumeIntelligence.Core.csproj" /></ItemGroup>
+</Project>

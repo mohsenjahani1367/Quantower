@@ -1,0 +1,1 @@
+All fixtures in this directory are synthetic, schema-faithful examples. They are not captured exchange data or a claim of live connectivity. The Binance fixture follows the official public aggregate-trade schema, including maker-side reversal and first/last underlying trade IDs. The replay fixture is a small hand-calculated test dataset, not a trading performance dataset.
