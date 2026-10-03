@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <AssemblyName>VolumeIntelligence.Quantower.Indicators</AssemblyName>
+    <BusinessLayerPath Condition="'$(BusinessLayerPath)' == ''">C:\Quantower\TradingPlatform\v1.146.18\bin\TradingPlatform.BusinessLayer.dll</BusinessLayerPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../ReplayVpsvIndicator.cs" Link="ReplayVpsvIndicator.cs" />
+    <ProjectReference Include="../../VolumeIntelligence.Core/VolumeIntelligence.Core.csproj" />
+    <Reference Include="TradingPlatform.BusinessLayer"><HintPath>$(BusinessLayerPath)</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <Target Name="RequireQuantowerApi" BeforeTargets="ResolveReferences" Condition="!Exists('$(BusinessLayerPath)')">
+    <Error Text="Quantower API DLL is missing. Build on Windows against the actual BusinessLayerPath." />
+  </Target>
+</Project>
